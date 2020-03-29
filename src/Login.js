@@ -1,5 +1,6 @@
 import React, { useCallback, useContext,useState } from "react";
 import { withRouter, Redirect } from "react-router";
+import {Link} from "react-router-dom";
 import {setSessionCookie,getSessionCookie} from "./session";
 import "./Login.css"
 import app from "./base.js";
@@ -139,7 +140,7 @@ else{
       </div>
       <div className="createAccount">
         <button type="submit">Login</button>
-        <small>Not Have an Account?</small>
+        <small>Not Have an Account? <Link to="/signup">SignUp</Link></small>
       </div>
     </form>
   </div>

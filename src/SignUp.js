@@ -1,7 +1,7 @@
 import React, { useCallback,useState } from "react";
 import { withRouter,Redirect } from "react-router";
 import app from "./base";
-
+import {Link} from "react-router-dom";
 
 const SignUp = ({ history }) => {
   //regular expression for email
@@ -184,7 +184,7 @@ app.firestore().collection("userdata").add({
       </div>
       <div className="createAccount">
         <button type="submit">Login</button>
-        <small>Not Have an Account?</small>
+        <small>Not Have an Account? <Link to="/login">Login</Link></small>
       </div>
     </form>
   </div>
