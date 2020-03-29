@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 
 const App = () => {
   return (
+    
     <AuthProvider>
       <Router>
         <div>
